@@ -1,0 +1,205 @@
+.login-section {
+    /* width: 25% !important; */
+    /* height: 100vh; */
+    background: #fff;
+    height: 100%;
+    position: relative;
+    /* padding: 15px; */
+    margin-top: 15px;
+}
+
+.login-section .section-header {
+    text-align: center;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    padding: 40px;
+    border-radius: 5px 5px 0 0;
+}
+
+.login-section .section-header .company-logo {
+    padding: 20px 0;
+}
+
+.login-section .section-header h4 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+}
+
+.login-section .section-header .company-logo img {
+    width: 200px;
+}
+
+
+
+.user-authentication-bg {
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user-authentication-section .background-color {
+    background: linear-gradient(90deg, #1CB5E08C 0%, #000851 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.login-section .login-item-box {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* width: 100%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* background: #fff; */
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 2px 12px rgb(0 0 0 / 11%); */
+    /* height: 100%; */
+}
+
+.login-section .section-contant .submit-btn .btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.authentication-content {
+    position: relative;
+    /* left: 0; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.authentication-content .product-name h1 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #fff;
+    margin: 20px 0;
+    padding-left: 60px;
+    width: 100%;
+}
+
+.authentication-content .product-discription p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.authentication-content .registration-btn .btn {
+    background: #3490dc;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.user-authentication-section .form-group {
+    margin: 4px 0 !important;
+}
+
+.user-authentication-section .submit-btn {
+    text-align: center;
+
+}
+
+.user-authentication-section .submit-btn .btn {
+    margin: 20px 0;
+
+}
+
+.reset-password-section .reset-password-box {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 11%);
+
+}
+
+.reset-password-section .reset-password-item {
+    height: 100vh;
+}
+
+.reset-password-section .reset-password-box .section-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.reset-password-section .reset-password-item .submit-btn .btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reset-password-box .section-header .company-logo img {
+    width: 200px;
+}
+
+.reset-password-box .section-header .company-logo {
+    padding: 20px 0;
+}
+
+.reset-password-box .section-header {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    border-radius: 5px 5px 0 0;
+}
+
+.reset-password-section .reset-password-item .section-contant {
+    padding: 20px;
+}
+
+.reset-password-section .reset-password-box h4 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.login-section .section-contant {
+    padding: 15px;
+}
+
+.card.password-reset .form-group {
+    margin: 10px 0;
+}
+
+.card.password-reset .card-header {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 575.98px) {
+
+    .login-section .login-item-box {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .authentication-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-bottom: 20%;
+    }
+
+    .user-authentication-bg {
+        height: auto;
+    }
+
+    .reset-password-section .reset-password-box {
+        width: 100%;
+    }
+
+    
+
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}

@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Http\Middleware\admin;
+
+use Closure;
+use Illuminate\Http\Request;
+use App\Models\Permission;
+use App\Models\User;
+use App\Models\Package;
+use Session;
+use Auth;
+
+class trainingtype
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+     */
+    public function handle(Request $request, Closure $next)
+    {
+        if (Permission::where('permission_com_id', Auth::user()->com_id)->where('permission_role_id', Auth::user()->role_id)
+            ->whereRaw('json_contains(permission_content, \'["' . 17.1 . '"]\')')
+            ->exists() || (Auth::user()->company_profile == 'Yes')
+        ) {
+            return $next($request);
+        } else {
+            // Session::flash('error', 'You Can Not Perform This Action.Please Contact Your It Officer');
+            return redirect('/home')->with('message', 'You Can Not Perform This Action.Please Contact Your It Officer');
+        }
+    }
+}

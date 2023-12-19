@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cover_area {
+    height: 130px;
+    position: relative;
+}
+
+.persone_name {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+    padding: 5rem 0 25px 25px;
+    margin-bottom: 2rem;
+}
+
+.profile_image img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 9px solid white;
+    bottom: -42%;
+    left: 15%;
+}
+
+/* .persone_name:last-child {
+    padding: 25px;
+} */
+
+.profile_info {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.tabs-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.tabs-nav li {
+    list-style: none;
+}
+
+.tabs-nav a {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Active tab */
+
+.tabs-nav li.active {
+    background: #FFF;
+    color: #000;
+    border-bottom: 4px solid #971C70;
+}
+
+.tabs-nav li.active a {
+    color: black;
+}
+
+/* Tab content */
+
+.tabs-content {
+    padding: 10px;
+    background: #FFF;
+    margin-top: -1px;
+    overflow: hidden;
+}
+
+.tabs-content IMG {
+    margin-right: 10px;
+}
+
+/* Hide all but first content div */
+
+.tabs-content .tab:not(:first-child) {
+    display: none;
+}
+.tab1{
+    padding: 25px;
+}
+p{
+    margin: 0;
+}
+.work_information{
+    margin-top: 20px;
+}
+
+#tab2{
+    padding: 25px;
+}

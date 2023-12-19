@@ -1,0 +1,186 @@
+<style>
+.appointment-letter{
+   padding:30px 50px;
+   td{
+    padding:5px 10px
+  }
+  table{
+    width:100%
+  }
+}
+</style>
+<div class="appointment-letter">
+  <p style="text-align: center;font-size:20px">Appointment Letter
+  </p>
+  {{-- <p> Employee Code <br/> --}}
+  {{date('Y-m-d')}}
+  </p>
+  <p>@if($employee_details_value->gender == 'Female') Ms. @else Mr. @endif {{$employee_details_value->first_name}} {{$employee_details_value->last_name}} <br/>
+  <br/>
+    City- {{$employee_details_value->address}}
+  </p>
+  <p>
+    Dear {{$employee_details_value->first_name}},
+  </p>
+   <p> We thank you for deciding to be a part of the {{$company_details_value->company_name}}.
+  </p>
+  <p> Congratulations and welcome onboard a dynamic and winning team! </p>
+  <p>Further to your acceptance of the offer letter dated Date of Offer Letter, we are pleased to confirm your appointment as {{$designation_value->designation_name}} for our {{$department_value->department_name}}  at  Location  in  {{$company_details_value->company_name}} . </p>
+  <p> Please make note of the following important terms and conditions of your employment: </p>
+  <p>Commencement of employment: You have joined our services on {{$employee_details_value->joining_date}} and the said date has been recorded as your Date of Joining and will be considered as such for all future purposes pertaining to your employment oƒ association with us.</p>
+  <p>Compensation & Benefits: Please refer to Annexure I, for details of your remuneration and benefits as applicable to you. The aforesaid CTC is subject to applicable taxes and statutory deductions that may prevail from time to time.</p>
+  <ul style="padding-left:15px">Transfer:
+    <li> While you are the employee of {{$company_details_value->company_name}}, the company reserves the right to transfer you to another location, unit, department or company, associate company, subsidiary company, group company based on its requirements.</li>
+    <li>In the event of such transfer you will be required to abide by the rules and regulations, service conditions and benefits of the department, store and location where you are transferred to.</li>
+  </ul>
+   <p>Retirement: Your retirement from the services of the company will be on attainment of the age of 60 years.</p>
+   <p>Governing Terms & Conditions: You will be governed by the clauses mentioned in your Service Agreement, company HR policies and POSH (Prevention of Sexual Harassment) at all points of time during your tenure of employment with the company. Please note that the appointment is subject to the background oƒ document verification. Please note that failure to adhere to these norms, may lead to immediate termination from the services of the company.
+</p>  
+  <p>Declarations: This appointment is made on the basis of information provided by you. Should it prove incorrect at any time, the Company reserves the rights to take appropriate action including forthwith termination of service. We shall be entitled to initiate necessary enquiries with the source of reference provided by you. In case of unfavorable report, we shall be entitled to take appropriate steps including forthwith terminating this agreement</p>
+   <p>Wish you a successful professional stint with us. We look forward to a mutually beneficial and enriching experience having you on board. All the best!</p>
+  <p>Warm Regards,<br/>
+For {{$company_details_value->company_name}}
+</p>
+_____________________ <br/>
+Authorised Signature<br/>
+
+  <p><div style="float:right;width:30%;">I have read the above terms and conditions of my appointment. I accept the same.<br/>
+  _____________________ <br/>
+  Applicant Name<br/>
+  {{-- Employee Code --}}
+</div>
+</p>
+<p style="clear: both;">Encl:<br/>
+1) Service Agreement
+</p>
+
+ <table border=1 cellspacing=0>
+    <tr>
+      <td colspan="3" style="text-align:center">ANNEXURE I</td>
+    </tr>
+    <tr>
+     <td colspan="3" style="text-align:center">{{$company_details_value->company_name}}</td>
+    </tr>
+     <tr >
+      <td style="width:40%">Employee No </td>
+       <td colspan="2"></td> 
+    </tr>
+   <tr >
+      <td style="width:40%">Name  </td>
+       <td colspan="2">{{$employee_details_value->first_name}} {{$employee_details_value->last_name}}</td> 
+    </tr>
+   <tr >
+      <td style="width:40%">Designation  </td>
+       <td colspan="2">{{$designation_value->designation_name}}</td> 
+    </tr>
+   <tr >
+      <td style="width:40%">Department  </td>
+       <td colspan="2">{{$department_value->department_name}}</td> 
+    </tr> 
+    <tr >
+      <td style="width:40%">Date of Joining  </td>
+       <td colspan="2">{{$employee_details_value->joining_date}}</td> 
+    </tr> 
+    {{-- <tr >
+      <td style="width:40%">Remarks  </td>
+       <td colspan="2"></td> 
+    </tr>  --}}
+    <tr >
+      <td style="width:40%">SALARY COMPONENTS </td>
+       <td >PER MONTH(Tk)</td> 
+       <td >PER ANNUM(Tk)</td> 
+    </tr> 
+    {{--<tr >
+      <td style="width:40%">Basic  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">HRA  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Additional Allowance   </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Education Allowance   </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Conveyance Allowance   </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Consolidated Allowance   </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Car  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">PF </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">EDLI  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Medical Reimbursement   </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">LTA  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Gratuity  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Medi−claim  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Fixed  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+   <tr >
+      <td style="width:40%">Variable  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> 
+    <tr >
+      <td style="width:40%">CTC  </td>
+       <td ></td> 
+       <td ></td> 
+    </tr> --}}
+    <tr >
+      <td style="width:40%">Gross Salary  </td>
+       <td>{{$employee_details_value->gross_salary}}</td> 
+       <td>{{$employee_details_value->gross_salary*12}}</td> 
+    </tr> 
+    <tr >
+      {{--<td colspan="3" style="width:40%">Remarks: With ref to FY FY pro−rata Performance Linked Award will be RS.
+ PRO RATED VARIABLE AMOUNT ƒ−.
+  </td>--}}
+    </tr> 
+</table>
+
+
+</div>
